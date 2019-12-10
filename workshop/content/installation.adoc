@@ -183,7 +183,7 @@ And you will see some output like:
 
 ```
 NAME      VERSION   AVAILABLE   PROGRESSING   SINCE   STATUS
-version   4.1.3     True        False         17m     Cluster version is 4.1.3
+version   4.2.7     True        False         20m     Cluster version is 4.2.7
 ```
 
 For more details, you can execute the following command:
@@ -204,21 +204,22 @@ Kind:         ClusterVersion
 Metadata:
 ...
 Spec:
-  Channel:     stable-4.1
-  Cluster ID:  31fe51a5-12ab-4aa8-9ecc-ace4ff215d92
+  Channel:     stable-4.2
+  Cluster ID:  47da74a3-7161-461a-aec6-d14a7a012f5e
   Upstream:    https://api.openshift.com/api/upgrades_info/v1/graph
 Status:
   Available Updates:
     Force:    false
-    Image:    quay.io/openshift-release-dev/ocp-release@sha256:a6c177eb007d20bb00bfd8
-f829e99bd40137167480112bd5ae1c25e40a4a163a
-    Version:  4.1.4
+    Image:    quay.io/openshift-release-dev/ocp-release@sha256:4bf307b98beba4d42da3316464013eac120c6e5a398646863ef92b0e2c621230
+    Version:  4.2.8
+    Force:    false
+    Image:    quay.io/openshift-release-dev/ocp-release@sha256:f28cbabd1227352fe704a00df796a4511880174042dece96233036a10ac61639
+    Version:  4.2.9
 ...
   Desired:
     Force:    false
-    Image:    quay.io/openshift-release-dev/ocp-release@sha256:f852f9d8c2e81a633e874e
-57a7d9bdd52588002a9b32fc037dba12b67cf1f8b0
-    Version:  4.1.3
+    Image:    quay.io/openshift-release-dev/ocp-release@sha256:bac62983757570b9b8f8bc84c740782984a255c16372b3e30cfc8b52c0a187b9
+    Version:  4.2.7
 ...
 ```
 
@@ -235,12 +236,12 @@ The output should look something like the following:
 
 ----
 NAME                                         STATUS   ROLES    AGE    VERSION
-ip-10-0-135-172.us-east-2.compute.internal   Ready    master   141m   v1.13.4+da48e8391
-ip-10-0-143-247.us-east-2.compute.internal   Ready    worker   135m   v1.13.4+da48e8391
-ip-10-0-144-209.us-east-2.compute.internal   Ready    master   141m   v1.13.4+da48e8391
-ip-10-0-158-20.us-east-2.compute.internal    Ready    worker   135m   v1.13.4+da48e8391
-ip-10-0-164-111.us-east-2.compute.internal   Ready    worker   135m   v1.13.4+da48e8391
-ip-10-0-173-137.us-east-2.compute.internal   Ready    master   141m   v1.13.4+da48e8391
+ip-10-0-130-139.us-east-2.compute.internal   Ready    worker   33m   v1.14.6+9fb2d5cf9
+ip-10-0-130-56.us-east-2.compute.internal    Ready    master   39m   v1.14.6+9fb2d5cf9
+ip-10-0-144-41.us-east-2.compute.internal    Ready    master   40m   v1.14.6+9fb2d5cf9
+ip-10-0-158-193.us-east-2.compute.internal   Ready    worker   33m   v1.14.6+9fb2d5cf9
+ip-10-0-161-12.us-east-2.compute.internal    Ready    master   39m   v1.14.6+9fb2d5cf9
+ip-10-0-174-50.us-east-2.compute.internal    Ready    worker   33m   v1.14.6+9fb2d5cf9
 ----
 
 You have 3 masters and 3 workers. The OpenShift *Master* is also a *Node*

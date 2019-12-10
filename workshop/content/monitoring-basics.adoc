@@ -1,4 +1,4 @@
-  ## OpenShift Monitoring
+## OpenShift Monitoring
 In this lab you will explore various aspects of the builtin OpenShift
 Monitoring. This includes an overview of the OpenShift Alertmanager UI,
 accessing the Prometheus web console, running PromQL (Prometheuses Query
@@ -46,7 +46,7 @@ within OpenShift, including the web console.
 The main page of the Alertmanager UI is the Alerts page.
 
 .Alerts Screen
-image::openshift_console_monitoring.png[]
+image::images/openshift_console_monitoring.png[]
 
 1. Filtering alerts by their names.
 1. Filtering the alerts by their states. To fire, some alerts need a certain
@@ -80,7 +80,7 @@ within OpenShift, including the Prometheus web console.
 1. This is the Prometheus Console where PromQL queries can be executed.
 +
 .Metrics UI (Prometheus Console)
-image::prometheus_console.png[]
+image::images/prometheus_console.png[]
 
 
 ##### Running Prometheus Queries
@@ -138,5 +138,5 @@ within OpenShift, including the Grafana dashboard.
   cluster.
 +
 .Dashboards UI (Grafana)
-image::grafana_dashboard.png[]
+image::images/grafana_dashboard.png[]
 

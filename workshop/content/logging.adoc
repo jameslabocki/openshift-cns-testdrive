@@ -43,10 +43,10 @@ not covered in the exercise or documentation at this time.
 
 OpenShift Container Platform cluster logging is designed to be used with the
 default configuration, which is tuned for small to medium sized OpenShift
-Container Platform clusters.
-The installation instructions that follow include a sample Cluster Logging
-Custom Resource (CR), which you can use to create a cluster logging instance
-and configure your cluster logging deployment.
+Container Platform clusters. The installation instructions that follow
+include a sample Cluster Logging Custom Resource (CR), which you can use to
+create a cluster logging instance and configure your cluster logging
+deployment.
 
 If you want to use the default cluster logging install, you can use the
 sample CR directly.
@@ -116,7 +116,7 @@ To begin, log-in to the OpenShift Cluster's GUI.
 Then follow the following steps:
 
 1. Install the Elasticsearch Operator:
-  a. In the OpenShift console, click `Catalog` → `OperatorHub`.
+  a. In the OpenShift console, click `Operators` → `OperatorHub`.
   b. Choose `Elasticsearch Operator` from the list of available Operators,
     and click `Install`.
 +
@@ -128,8 +128,8 @@ aggregation solution will no longer be "community" status. Accept the warning
 by clicking "Continue".
 ====
 +
-  c. On the `Create Operator Subscription` page, select `All namespaces on
-    the cluster` under `Installation Mode`. Then, click `Subscribe`.
+  c. On the `Create Operator Subscription` page, leave all of the defaults
+     and then click `Subscribe`.
 +
 This makes the Operator available to all users and projects that use this
 OpenShift Container Platform cluster.
@@ -143,20 +143,21 @@ The `Cluster Logging` operator needs to be installed in the
 namespace was created from the previous steps
 ====
 
-  a. In the OpenShift console, click `Catalog` → `OperatorHub`.
+  a. In the OpenShift console, click `Operators` → `OperatorHub`.
   b. Choose `Cluster Logging` from the list of available Operators, and click
     `Install`.
   c. On the `Create Operator Subscription` page, Under ensure `Installation
-    Mode` that `A specific namespace on the cluster namespaces on the cluster`
-    is selected, and choose `openshift-logging`. Then, click `Subscribe`.
+     Mode` that `A specific namespace on the cluster` is selected, and choose
+     `openshift-logging`. Leave the other defaults and then, click `Subscribe`.
 
 3. Verify the operator installations:
 
-  a. Switch to the `Catalog` → `Installed Operators` page.
+  a. Switch to the `Operators` → `Installed Operators` page.
 
-  b. Ensure that `Cluster Logging` and `Elasticsearch Operator` are listed on
-    the `InstallSucceeded` tab with a Status of `InstallSucceeded`. Change the
-    project to `all projects` if necessary.
+  b. Make sure the `openshift-logging` project is selected.
+
+  c. In the _Status_ column you should see green checks with either
+     `InstallSucceeded` or `Copied` and the text _Up to date_.
 +
 [NOTE]
 ====
