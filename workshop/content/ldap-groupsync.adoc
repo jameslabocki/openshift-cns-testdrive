@@ -552,8 +552,8 @@ authentication. While it will work, it doesn't demonstrate the
 ====
 
 The installer configured a `Route` for Prometheus by default. Go ahead and
-control+click the link:https://prometheus-k8s-openshift-monitoring.{{
-ROUTE_SUBDOMAIN }}[Prometheus link] to open it in your browser. You'll be
+copy the link:https://prometheus-k8s-openshift-monitoring.{{
+ROUTE_SUBDOMAIN }}[Prometheus link] and paste it into a new browser tab to open it. You'll be
 greeted with a login screen. Click the *Log in with OpenShift* button, then
 select the `ldap` auth mechanism, and use the `fancyuser1` user that you gave
 `cluster-reader` privileges to earlier.
