@@ -1,11 +1,6 @@
 ## Installation and Verification
 
-The scope of the new installer-provisioned infrastructure (IPI) OpenShift 4
-installation is purposefully narrow. It is designed for simplicity and
-ensured success. Many of the items and configurations that were previously
-handled by the installer are now expected to be "Day 2" operations, performed
-just after the installation of the control plane and basic workers completes.
-The installer provides a guided experience for provisioning the cluster on a
+OpenShift 4 introduced Installation Provisioned Infrastructure (IPI) that provisions the underlying infrastructure on the provider of choice and simplifies the installat process for the user. The installer provides a guided experience for provisioning the cluster on a
 particular platform.
 
 This IPI installation has already been performed for you, and the cluster is
